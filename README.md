@@ -7,7 +7,7 @@ single → satu per satu, cocok untuk bypass WAF / rate limit
 .
 .
 .
-#🔐 Tools ini berjalan via TOR dan bisa:
+# 🔐 Tools ini berjalan via TOR dan bisa:
 
 Auto-ganti IP secara otomatis
 
@@ -23,7 +23,7 @@ CLI dengan opsi lengkap
 .
 .
 .
-#🚀 Fitur Utama
+# 🚀 Fitur Utama
 
 ✅ Pilih mode multicall atau single
 
@@ -43,14 +43,14 @@ CLI dengan opsi lengkap
 .
 .
 .
-#🔧 Installation
+# 🔧 Installation
 🐍 Python Dependencies
 
     pip install requests stem termcolor
 .
 .
 .
-#🧅 Enable TOR + ControlPort
+# 🧅 Enable TOR + ControlPort
 
 Install TOR:
     
@@ -73,7 +73,7 @@ Restart TOR:
 .
 .
 .
-#📦 File Struktur
+# 📦 File Struktur
 
 torbfv4.py________________# Main script
 
@@ -83,7 +83,7 @@ success.txt_______________# Output berhasil (otomatis dibuat)
 .
 .
 .
-#▶️ Cara Pakai
+# ▶️ Cara Pakai
 📌 Multicall Mode:
 
     python3 torbfv4.py -u https://target.com/xmlrpc.php -U admin -w wppass.txt -m multicall
@@ -95,13 +95,13 @@ success.txt_______________# Output berhasil (otomatis dibuat)
 .
 .
 .
-#⚠️ Disclaimer
+# ⚠️ Disclaimer
 
     ❗ Tools ini dibuat hanya untuk tujuan edukasi dan pengujian legal.
     ❌ Segala bentuk penyalahgunaan menjadi tanggung jawab pengguna sepenuhnya.
 .
 .
 .
-#👨‍💻 Author
+# 👨‍💻 Author
 
 Coded by OfficialMarz57
