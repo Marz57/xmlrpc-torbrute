@@ -22,14 +22,24 @@ CLI dengan opsi lengkap
 🚀 Fitur Utama
 
 ✅ Pilih mode multicall atau single
+
 ✅ Auto switch IP via TOR (NEWNYM)
+
 ✅ Cek IP publik TOR (icanhazip.com)
+
 ✅ Delay acak antar request (bypass WAF)
+
 ✅ Random User-Agent
+
 ✅ Simpan hasil login berhasil
+
 ✅ Multi-threading untuk brute force cepat (single mode)
+
 ✅ Deteksi awal method xmlrpc
+
 ✅ Logo keren & CLI interaktif
+
+
 🔧 Installation
 🐍 Python Dependencies
 
