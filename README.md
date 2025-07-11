@@ -1,23 +1,23 @@
 # xmlrpc-torbrute
-wp_xmlrpc_bfv3.py adalah tools brute-force WordPress yang menyerang endpoint xmlrpc.php dengan dua mode:
+torbfv4.py adalah tools brute-force WordPress yang menyerang endpoint xmlrpc.php dengan dua mode:
 
-    multicall → mengirim banyak permintaan sekaligus (efisien & cepat)
+multicall → mengirim banyak permintaan sekaligus (efisien & cepat)
 
-    single → satu per satu, cocok untuk bypass WAF / rate limit
+single → satu per satu, cocok untuk bypass WAF / rate limit
 
 🔐 Tools ini berjalan via TOR dan bisa:
 
-    Auto-ganti IP secara otomatis
+Auto-ganti IP secara otomatis
 
-    Deteksi metode XML-RPC aktif
+Deteksi metode XML-RPC aktif
 
-    Gunakan User-Agent acak untuk menghindari fingerprinting
+Gunakan User-Agent acak untuk menghindari fingerprinting
 
-    Simpan login berhasil ke success.txt
+Simpan login berhasil ke success.txt
 
-    Support multi-threading di mode single
+Support multi-threading di mode single
 
-    CLI dengan opsi lengkap
+CLI dengan opsi lengkap
 
 🚀 Fitur Utama
 
@@ -33,37 +33,40 @@ wp_xmlrpc_bfv3.py adalah tools brute-force WordPress yang menyerang endpoint xml
 🔧 Installation
 🐍 Python Dependencies
 
-pip install requests stem termcolor
+    pip install requests stem termcolor
 
 🧅 Enable TOR + ControlPort
 
-    Install TOR:
+Install TOR:
+    
+    sudo apt install tor
 
-sudo apt install tor
+Edit file TOR config 
+    /etc/tor/torrc
+tambahkan/edit bagian ini jadi seperti ini:
 
-    Edit file TOR config (/etc/tor/torrc) → tambahkan:
+    ControlPort 9051
+    CookieAuthentication 1
 
-ControlPort 9051
-CookieAuthentication 1
+Restart TOR:
 
-    Restart TOR:
-
-sudo systemctl restart tor
+    sudo systemctl restart tor
 
 📦 File Struktur
 
-wp_xmlrpc_bfv3.py       # Main script
+torbfv4.py              # Main script
+wppass.txt              # Wordlists abal abal hehe
 success.txt             # Output berhasil (otomatis dibuat)
 wplist.txt              # Wordlist (isi password)
 
 ▶️ Cara Pakai
 📌 Multicall Mode:
 
-python3 wp_xmlrpc_bfv3.py -u https://target.com/xmlrpc.php -U admin -w wplist.txt -m multicall
+python3 torbfv4.py -u https://target.com/xmlrpc.php -U admin -w wplist.txt -m multicall
 
 📌 Single Mode + Threads:
 
-python3 wp_xmlrpc_bfv3.py -u https://target.com/xmlrpc.php -U admin -w wplist.txt -m single -t 5
+python3 torbfv4.py -u https://target.com/xmlrpc.php -U admin -w wplist.txt -m single -t 5
 
 📁 Contoh Wordlist (wplist.txt)
 
