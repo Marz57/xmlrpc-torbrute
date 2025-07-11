@@ -5,6 +5,8 @@ multicall → mengirim banyak permintaan sekaligus (efisien & cepat)
 
 single → satu per satu, cocok untuk bypass WAF / rate limit
 
+
+
 🔐 Tools ini berjalan via TOR dan bisa:
 
 Auto-ganti IP secara otomatis
@@ -18,6 +20,8 @@ Simpan login berhasil ke success.txt
 Support multi-threading di mode single
 
 CLI dengan opsi lengkap
+
+
 
 🚀 Fitur Utama
 
@@ -40,16 +44,21 @@ CLI dengan opsi lengkap
 ✅ Logo keren & CLI interaktif
 
 
+
 🔧 Installation
 🐍 Python Dependencies
 
     pip install requests stem termcolor
+
+    
 
 🧅 Enable TOR + ControlPort
 
 Install TOR:
     
     sudo apt install tor
+
+
 
 Edit file TOR config 
     /etc/tor/torrc
@@ -58,16 +67,22 @@ tambahkan/edit bagian ini jadi seperti ini:
     ControlPort 9051
     CookieAuthentication 1
 
+
+
 Restart TOR:
 
     sudo systemctl restart tor
 
+
+
+
 📦 File Struktur
 
-torbfv4.py              # Main script
-wppass.txt              # Wordlists abal abal hehe
-success.txt             # Output berhasil (otomatis dibuat)
-wplist.txt              # Wordlist (isi password)
+torbfv4.py               # Main script
+wppass.txt               # Wordlists abal abal hehe
+success.txt              # Output berhasil (otomatis dibuat)
+
+
 
 ▶️ Cara Pakai
 📌 Multicall Mode:
