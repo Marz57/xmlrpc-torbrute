@@ -1,4 +1,4 @@
-![Priview Tool]('screenshoot/Screenshot From 2025-07-12 01-34-15.png')
+![Priview Tool](screenshoot/Screenshot From 2025-07-12 01-34-15.png)
 
 # xmlrpc-torbrute
 torbfv4.py adalah tools brute-force WordPress yang menyerang endpoint xmlrpc.php dengan dua mode:
