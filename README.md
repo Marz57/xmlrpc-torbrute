@@ -78,9 +78,11 @@ Restart TOR:
 
 📦 File Struktur
 
-torbfv4.py               # Main script
-wppass.txt               # Wordlists abal abal hehe
-success.txt              # Output berhasil (otomatis dibuat)
+torbfv4.py________________# Main script
+
+wppass.txt________________# Wordlists abal abal hehe
+
+success.txt_______________# Output berhasil (otomatis dibuat)
 
 
 
